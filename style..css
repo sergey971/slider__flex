@@ -1,0 +1,56 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    height: 100vh;
+    flex-basis: 25%;
+    background-color: rgb(94, 100, 98);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+
+    transition: all .2s;
+}
+span{
+    font-size: 2rem;
+    text-shadow: 0 0 10px #000;
+}
+.item:hover{
+    flex-basis: 100%;
+}
+.item-1 {
+    background: url("./../image/1.jpg") no-repeat center center;
+    background-size: cover;
+}
+.item-2 {
+    background: url("./../image/5.jpg") no-repeat center center;
+    background-size: cover;
+}
+.item-3 {
+    background: url("./../image/6.jpg") no-repeat center center;
+    background-size: cover;
+}
+.item-4 {
+    background: url("./../image/4.jpg") no-repeat center center;
+    background-size: cover;
+}
+@media(max-width:640px){
+    .slider{
+        height: 100vh;
+        flex-flow: column;
+    }
+    .item{
+        width: 100%;
+    }
+    .item:hover{
+        flex-grow: 30%;
+    }
+}
